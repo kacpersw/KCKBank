@@ -1,0 +1,64 @@
+﻿<UserControl x:Class="KCKBank.Transfers3"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:KCKBank"
+             mc:Ignorable="d" 
+             d:DesignHeight="500" d:DesignWidth="650">
+    <Grid Background="#e4e5ff">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="24"></RowDefinition>
+            <RowDefinition Height="25"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="25"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="25"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="80"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Label Grid.ColumnSpan="3" Background="#475b76"></Label>
+        <Grid Grid.ColumnSpan="3" Background="#475b76">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button Background="#384e6b" Foreground="White" Click="MainPage2">Strona główna</Button>
+            <Button Grid.Column="1" Background="#384e6b" Foreground="White" Click="Accounts">Konta</Button>
+            <Button Grid.Column="2" Background="#384e6b" Foreground="White">Przelewy</Button>
+            <Button Grid.Column="3" Background="#384e6b" Foreground="White" Click="Cards">Karty</Button>
+            <Button Grid.Column="4" Background="#384e6b" Foreground="White" Click="Credits">Kredyty</Button>
+            <Button Grid.Column="5" Background="#384e6b" Foreground="White" Click="GoToInsurance">Ubezpieczenia</Button>
+        </Grid>
+
+        <Label Grid.Column="1" Grid.Row="3" Grid.RowSpan="3">
+            <Label.Background>
+                <ImageBrush ImageSource="bin/debug/transfer.jpeg" ></ImageBrush>
+            </Label.Background>
+        </Label>
+        
+        <Label Grid.Column="1" Grid.Row="6" HorizontalContentAlignment="Center">Podaj kod wysłany smsem</Label>
+        <TextBox Grid.Column="1" Grid.Row="7" Margin="36 7"></TextBox>
+
+        <Button Margin="36 10" Grid.Column="1" Grid.Row="8" Background="#CD0853" Foreground="White" FontWeight="Bold" Click="MainPage2">Wyślij przelew</Button>
+
+    </Grid>
+</UserControl>

@@ -1,0 +1,59 @@
+﻿<UserControl x:Class="KCKBank.Login2"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:KCKBank"
+             mc:Ignorable="d" 
+             d:DesignHeight="500" d:DesignWidth="650">
+    <Grid Background="#4779bf">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="35"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="35"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+
+        <Label Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" VerticalContentAlignment="Bottom">Twój Filekod</Label>
+        <Label Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center" VerticalContentAlignment="Top">321 212 41</Label>
+
+        <Label Grid.Row="4" Grid.Column="1" HorizontalAlignment="Center" VerticalContentAlignment="Bottom">Hasło</Label>
+        <TextBox Grid.Row="5" Grid.Column="1" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Margin="30 6"></TextBox>
+
+        <Label Grid.Row="6" Grid.Column="1" HorizontalAlignment="Center" VerticalContentAlignment="Bottom">Identyfikator</Label>
+
+        <Grid Grid.Row="7" Grid.Column="1" Margin="10 1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="White" Margin="6">*</Label>
+            <TextBox Grid.Column="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="White" Margin="6"></TextBox>
+            <Label Grid.Column="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="White" Margin="6">*</Label>
+            <TextBox Grid.Column="3" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="White" Margin="6"></TextBox>
+            <Label Grid.Column="4" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="White" Margin="6">*</Label>
+
+
+        </Grid>
+
+
+        <Button Margin="40 6"  Grid.Column="1" Grid.Row="8"  HorizontalContentAlignment="Center" FontWeight="Bold" Background="#CD0853" Foreground="White" Click="GoToMainPage">Zaloguj</Button>
+    </Grid>
+</UserControl>
